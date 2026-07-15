@@ -12,15 +12,20 @@
 
 
 :root{
-    --bg-color:#fff1f5;
-    --second-bg:#ffe4ec;
-    --text-color:#5a3d45;
-    --main-color:#e89ab2;
-    --card-color:#fff7fa;
-    --box-color:#fff7fa;
-    --header-bg: rgba(255, 228, 236, 0.75);
-    --nav-color:#5a3d45;
-    --input-bg:#ecc9c9;
+    --bg-color:#fafafa;          /* Main background */
+    --second-bg:#f3f4f6;         /* Alternate section background */
+    --text-color:#2d2d2d;
+
+    --main-color:#d86b8b;        /* Pink accent */
+
+    --card-color:#ffffff;
+    --box-color:#ffffff;
+
+    --header-bg:rgba(255,255,255,0.85);
+
+    --nav-color:#2d2d2d;
+
+    --input-bg:#f5f5f5;
 }
 
 .dark-mode{
@@ -201,7 +206,7 @@ nav a:hover{
 
     border:5px solid #e89ab2;
 
-    box-shadow:0 0 30px #f3b6c8;
+    box-shadow:0 0 15px #f3b6c8;
 
 }
 
@@ -757,3 +762,24 @@ h1,h2,h3,p{
 .dark-mode h3{
     color:#f5f5f5;
 }
+.theme-switcher{
+    position:fixed;
+    right:20px;
+    top:120px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.color{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    cursor:pointer;
+    border:2px solid white;
+}
+
+.pink{background:#d86b8b;}
+.blue{background:#3b82f6;}
+.purple{background:#8b5cf6;}
+.green{background:#10b981;}

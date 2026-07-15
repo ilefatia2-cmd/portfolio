@@ -99,3 +99,13 @@ if(themeIcon){
     };
 
 }
+const colors = document.querySelectorAll(".color");
+
+colors.forEach(color => {
+    color.addEventListener("click", () => {
+        document.documentElement.style.setProperty(
+            "--main-color",
+            color.dataset.color
+        );
+    });
+});
