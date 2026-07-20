@@ -783,3 +783,13 @@ h1,h2,h3,p{
 .blue{background:#3b82f6;}
 .purple{background:#8b5cf6;}
 .green{background:#10b981;}
+.weather-project{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.bmi-project{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
