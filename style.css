@@ -793,3 +793,59 @@ h1,h2,h3,p{
     height: 300px;
     object-fit: contain;
 }
+/* CERTIFICATES */
+
+.certificates{
+    background:var(--bg-color);
+}
+
+.certificates-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.certificate-box{
+    background:var(--box-color);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.certificate-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px var(--main-color);
+}
+
+.certificate-box img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.certificate-box h3{
+    font-size:22px;
+    margin-bottom:8px;
+    color:var(--text-color);
+}
+
+.certificate-box p{
+    font-size:15px;
+    color:#9a9a9a;
+}
+
+.dark-mode .certificate-box{
+    background:#252525;
+}
+
+/* Mobile: stack certificates */
+@media(max-width:900px){
+    .certificates-container{
+        grid-template-columns:1fr;
+    }
+}
